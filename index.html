@@ -40,6 +40,7 @@
 <button></button>
 <script>
   const divs = querySelectorAll('div');
+  const button = document.querySelector('button');
 
   function logText(e) {
     // e.stopPropagation();
@@ -50,6 +51,12 @@
     capture: false,
     once: true
   }));
+
+  button.addEventListener('click', () => {
+    console.log('Click!!!');
+  }, {
+    once: true
+  });
 
 </script>
 </body>
